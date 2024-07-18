@@ -80,7 +80,7 @@ namespace Lab1_WorkingWithLoops
                 numberOfAttempts++;
             } 
             Console.WriteLine($"Игра окончена со счётом {numberOfVictories}, " +
-            $"угадано {CalculateWinningPercentage(numberOfVictories, numberOfAttempts)}% бросков.");
+            $"угадано {Math.Round(CalculateWinningPercentage(numberOfVictories, numberOfAttempts))}% бросков.");
         }
 
         static double CalculateWinningPercentage(int numberOfVictories, int numberOfAttempts)
@@ -88,8 +88,7 @@ namespace Lab1_WorkingWithLoops
             var result = 0.0;
             if (numberOfVictories != 0)
             {
-                var temp = (double)numberOfVictories / numberOfAttempts * 100;
-                result = Math.Round(temp);
+                result = (double)numberOfVictories / numberOfAttempts * 100;
             }
             return result;
         }

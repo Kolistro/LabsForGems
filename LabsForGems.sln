@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Lab0_WorkingWithVariablesAn
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Lab1_WorkingWithLoops", "Lab1_WorkingWithLoops\Lab1_WorkingWithLoops.csproj", "{2DEBDF17-8213-4AA2-ABAD-DBEB9D44707A}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Lab2_SolvingQuadraticEquations", "Lab2_SolvingQuadraticEquations\Lab2_SolvingQuadraticEquations.csproj", "{2CA109EE-AA48-45D1-8A99-031C601EBEA6}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{2DEBDF17-8213-4AA2-ABAD-DBEB9D44707A}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{2DEBDF17-8213-4AA2-ABAD-DBEB9D44707A}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{2DEBDF17-8213-4AA2-ABAD-DBEB9D44707A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2CA109EE-AA48-45D1-8A99-031C601EBEA6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2CA109EE-AA48-45D1-8A99-031C601EBEA6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2CA109EE-AA48-45D1-8A99-031C601EBEA6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2CA109EE-AA48-45D1-8A99-031C601EBEA6}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

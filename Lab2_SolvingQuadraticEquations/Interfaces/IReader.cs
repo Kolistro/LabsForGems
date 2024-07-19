@@ -1,8 +1,8 @@
 ﻿using Lab2_SolvingQuadraticEquations.Equation;
 
-namespace Lab2_SolvingQuadraticEquations.Reader
+namespace SolvingQuadraticEquations.Interfaces
 {
-    internal interface IReader
+    public interface IReader
     {
         public СoefficientsEquation Read();
     }

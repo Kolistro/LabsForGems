@@ -1,6 +1,6 @@
 ﻿namespace Lab2_SolvingQuadraticEquations.Equation
 {
-    internal class СoefficientsEquation
+    public class СoefficientsEquation
     {
         public double A { get; set; }
         public double B { get; set; }
@@ -27,9 +27,6 @@
             C = сoefficients.C;
         }
 
-        public override string ToString()
-        {
-            return $"Уравнение: {A}x*x + {B}x + {C} = 0";
-        }
+
     }
 }

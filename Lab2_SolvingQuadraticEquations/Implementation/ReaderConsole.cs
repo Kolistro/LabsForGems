@@ -1,9 +1,9 @@
-﻿using System;
-using Lab2_SolvingQuadraticEquations.Equation;
+﻿using Lab2_SolvingQuadraticEquations.Equation;
+using SolvingQuadraticEquations.Interfaces;
 
 namespace Lab2_SolvingQuadraticEquations.Reader
 {
-    internal class ConsoleReader : IReader
+    internal class ReaderConsole : IReader
     {
         public СoefficientsEquation Read()
         {
@@ -26,7 +26,7 @@ namespace Lab2_SolvingQuadraticEquations.Reader
                 Console.WriteLine("Проверьте ввод, ожидается число");
 
             СoefficientsEquation сoefficients = new(a, b, c);
-            Console.WriteLine($"{сoefficients.ToString}");
+            //Console.WriteLine($"{сoefficients.ToString}");
             return сoefficients;
         }
     }

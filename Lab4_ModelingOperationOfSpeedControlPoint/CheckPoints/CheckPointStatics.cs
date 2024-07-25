@@ -7,7 +7,7 @@
         public int BusesCount { get; set; }
         public int SpeedLimitBreakersCount { get; set; }
         public int CarJackersCount { get; set; }
-        public int AverageSpeed { get; set; }
+        public double AverageSpeed { get; set; }
 
         public override string ToString()
         {

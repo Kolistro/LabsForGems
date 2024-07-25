@@ -14,7 +14,7 @@ do
     checkPoint.RegisterVehicle(vehicle);
 
 
-    System.Threading.Thread.Sleep(10);
+    System.Threading.Thread.Sleep(1000);
 } while (!Console.KeyAvailable);
 
 writerConsole.Write(checkPoint.GetStatics().ToString());

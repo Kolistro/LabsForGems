@@ -30,10 +30,12 @@ namespace ModelingOperationOfSpeedControlPoint.CheckPoints
 
         public void RegisterVehicle(AVehicle vehicle)
         {
+            int speed = vehicle.GetSpeed();
+
             СountQuantityByVehicleBodyType(vehicle.BodyType);
-            RecordSpeeding(vehicle.GetSpeed());
+            RecordSpeeding(speed);
             InterceptStolenVehicles(vehicle.LicensePlateNumber);          
-            _static.AverageSpeed = GetAverageSpeed(vehicle.GetSpeed());
+            _static.AverageSpeed = GetAverageSpeed(speed);
 
         }
 
@@ -81,11 +83,11 @@ namespace ModelingOperationOfSpeedControlPoint.CheckPoints
             return false;
         }
 
-        private int GetAverageSpeed(int speed)
+        private double GetAverageSpeed(int speed)
         {
             int countVehicle = GetCountVehicle();
-            double averageSpeed = ((_static.AverageSpeed * countVehicle) + speed)/(countVehicle+1);
-            return (int)Math.Round(averageSpeed);
+            double averageSpeed = ((_static.AverageSpeed * (countVehicle-1)) + speed)/(countVehicle);
+            return Math.Round(averageSpeed);
         }
 
         private int GetCountVehicle()

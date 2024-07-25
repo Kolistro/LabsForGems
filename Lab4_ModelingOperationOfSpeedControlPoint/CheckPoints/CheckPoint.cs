@@ -1,0 +1,98 @@
+﻿using ModelingOperationOfSpeedControlPoint.Enums;
+using ModelingOperationOfSpeedControlPoint.Vehicles;
+using ModelingOperationOfSpeedControlPoint.Writer;
+
+namespace ModelingOperationOfSpeedControlPoint.CheckPoints
+{
+    public class CheckPoint
+    {
+        private CheckPointStatics _static;
+        private List<int> _stolenNumbers;
+        private int _highSpeed = 110;
+
+        public CheckPoint()
+        {
+            Random random = new Random();
+            int countStolenNumbers = 10;
+            _stolenNumbers = new List<int>();
+
+            _static = new CheckPointStatics();
+            for (int i = 0; i < countStolenNumbers; i++)
+            {
+                _stolenNumbers.Add(random.Next(100, 1000));
+            }
+        }
+
+        public CheckPointStatics GetStatics()
+        {
+            return _static;
+        }
+
+
+        public void RegisterVehicle(AVehicle vehicle)
+        {
+            СountQuantityByVehicleBodyType(vehicle.BodyType);
+            RecordSpeeding(vehicle.GetSpeed());
+            InterceptStolenVehicles(vehicle.LicensePlateNumber);          
+            _static.AverageSpeed = GetAverageSpeed(vehicle.GetSpeed());
+
+        }
+
+        private void СountQuantityByVehicleBodyType(VehicleBodyType vehicleType)
+        {
+            if (vehicleType == VehicleBodyType.CAR)
+                _static.CarsCount++;
+            else if (vehicleType == VehicleBodyType.BUS)
+                _static.BusesCount++;
+            else if (vehicleType == VehicleBodyType.TRUCK)
+                _static.TruckCount++;
+        }
+
+        private void RecordSpeeding(int speed)
+        {
+            if (speed > _highSpeed)
+            {
+                _static.SpeedLimitBreakersCount++;
+                IWriter writer = new WriterConsole();
+                writer.WriteAboutViolation("Превышение скорости!");
+                
+            }
+        }
+
+        private void InterceptStolenVehicles(int licensePlateNumber)
+        {
+            if (IsNumberStolen(licensePlateNumber))
+            {
+                _static.CarJackersCount++;
+                IWriter writer = new WriterConsole();
+                writer.WriteAboutViolation("Перехват!");
+            }
+        }
+
+        private bool IsNumberStolen(int licensePlateNumber)
+        {
+            foreach (int number in _stolenNumbers)
+            {
+                if(licensePlateNumber == number)
+                {
+                    return true;
+                }
+            }
+            return false;
+        }
+
+        private int GetAverageSpeed(int speed)
+        {
+            int countVehicle = GetCountVehicle();
+            double averageSpeed = ((_static.AverageSpeed * countVehicle) + speed)/(countVehicle+1);
+            return (int)Math.Round(averageSpeed);
+        }
+
+        private int GetCountVehicle()
+        {
+            return _static.CarsCount + _static.BusesCount + _static.TruckCount;
+        }
+
+
+    }
+}

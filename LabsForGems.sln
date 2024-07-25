@@ -11,7 +11,13 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SolvingQuadraticEquations",
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Lab2", "Lab2", "{238C4FA8-12F4-425A-8AA1-B110D1102C26}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SolvingQuadraticEquations.Ui", "SolvingQuadraticEquations.Ui\SolvingQuadraticEquations.Ui.csproj", "{B965B5DE-0255-4BA4-86C2-8061D00CD4B1}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SolvingQuadraticEquations.Ui", "SolvingQuadraticEquations.Ui\SolvingQuadraticEquations.Ui.csproj", "{B965B5DE-0255-4BA4-86C2-8061D00CD4B1}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ModelingOperationOfSpeedControlPoint", "Lab4_ModelingOperationOfSpeedControlPoint\ModelingOperationOfSpeedControlPoint.csproj", "{419A1329-E47B-4692-AFD4-B297A9BF9CDD}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Lab4", "Lab4", "{98EF1410-B621-4145-A0A3-41B1383255C7}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ModelingOperationOfSpeedControlPoint.Ui", "ModelingOperationOfSpeedControlPoint.Ui\ModelingOperationOfSpeedControlPoint.Ui.csproj", "{886330AB-530D-4030-A93D-690205E6354E}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -35,6 +41,14 @@ Global
 		{B965B5DE-0255-4BA4-86C2-8061D00CD4B1}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{B965B5DE-0255-4BA4-86C2-8061D00CD4B1}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{B965B5DE-0255-4BA4-86C2-8061D00CD4B1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{419A1329-E47B-4692-AFD4-B297A9BF9CDD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{419A1329-E47B-4692-AFD4-B297A9BF9CDD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{419A1329-E47B-4692-AFD4-B297A9BF9CDD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{419A1329-E47B-4692-AFD4-B297A9BF9CDD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{886330AB-530D-4030-A93D-690205E6354E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{886330AB-530D-4030-A93D-690205E6354E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{886330AB-530D-4030-A93D-690205E6354E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{886330AB-530D-4030-A93D-690205E6354E}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -42,6 +56,8 @@ Global
 	GlobalSection(NestedProjects) = preSolution
 		{2CA109EE-AA48-45D1-8A99-031C601EBEA6} = {238C4FA8-12F4-425A-8AA1-B110D1102C26}
 		{B965B5DE-0255-4BA4-86C2-8061D00CD4B1} = {238C4FA8-12F4-425A-8AA1-B110D1102C26}
+		{419A1329-E47B-4692-AFD4-B297A9BF9CDD} = {98EF1410-B621-4145-A0A3-41B1383255C7}
+		{886330AB-530D-4030-A93D-690205E6354E} = {98EF1410-B621-4145-A0A3-41B1383255C7}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {5EA88D2D-7307-456B-A3AB-5D96F230C514}

@@ -28,7 +28,6 @@ namespace ModelingOperationOfSpeedControlPoint.CheckPoints
             return _static;
         }
 
-
         public void RegisterVehicle(AVehicle vehicle)
         {
             СountQuantityByVehicleBodyType(vehicle.BodyType);
@@ -50,12 +49,13 @@ namespace ModelingOperationOfSpeedControlPoint.CheckPoints
 
         private void RecordSpeeding(int speed)
         {
+            IWriter writer = new WriterConsole();
+            writer.Write($"Скорость: {speed}");
+
             if (speed > _highSpeed)
             {
                 _static.SpeedLimitBreakersCount++;
-                IWriter writer = new WriterConsole();
-                writer.WriteAboutViolation("Превышение скорости!");
-                
+                writer.WriteAboutViolation("Превышение скорости!");    
             }
         }
 
@@ -92,7 +92,5 @@ namespace ModelingOperationOfSpeedControlPoint.CheckPoints
         {
             return _static.CarsCount + _static.BusesCount + _static.TruckCount;
         }
-
-
     }
 }

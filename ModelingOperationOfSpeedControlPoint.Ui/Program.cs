@@ -10,11 +10,11 @@ IWriter writerConsole = new WriterConsole();
 do
 {
     AVehicle vehicle = VehicleGenerator.Generate();
-    writerConsole.Write(vehicle);
+    writerConsole.Write(vehicle.ToString());
     checkPoint.RegisterVehicle(vehicle);
 
 
-    System.Threading.Thread.Sleep(1000);
+    System.Threading.Thread.Sleep(10);
 } while (!Console.KeyAvailable);
 
-writerConsole.Write(checkPoint.GetStatics());
+writerConsole.Write(checkPoint.GetStatics().ToString());

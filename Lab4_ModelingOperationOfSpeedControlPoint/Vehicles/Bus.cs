@@ -1,5 +1,4 @@
 ﻿using ModelingOperationOfSpeedControlPoint.Enums;
-using System.Drawing;
 
 namespace ModelingOperationOfSpeedControlPoint.Vehicles
 {

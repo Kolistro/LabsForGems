@@ -16,15 +16,14 @@ namespace ModelingOperationOfSpeedControlPoint.Vehicles
 
             Color = randomVehicleColor;
             LicensePlateNumber = new Random().Next(100, 1000);
-            HasPassenger = Convert.ToBoolean(new Random().Next(0, 1));
+            HasPassenger = Convert.ToBoolean(new Random().Next(0, 2));
         }
 
         public abstract int GetSpeed();
 
         public override string ToString()
         {
-            return $"{BodyType}: Цвет {Color}, Номер {LicensePlateNumber}, Наличие пассажира: {HasPassenger}, " +
-                $"Скорость: {GetSpeed()}";
+            return $"{BodyType}: Цвет {Color}, Номер {LicensePlateNumber}, Наличие пассажира: {HasPassenger}";
         }
 
     }

@@ -23,7 +23,7 @@ namespace ModelingOperationOfSpeedControlPoint.Vehicles
 
         public override string ToString()
         {
-            return $"{BodyType}: Цвет {Color}, Номер {LicensePlateNumber}, Наличие пассажира: {HasPassenger}";
+            return $"{BodyType}:\t Цвет {Color}, Номер {LicensePlateNumber}, Наличие пассажира: {HasPassenger}";
         }
 
     }

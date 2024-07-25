@@ -13,7 +13,7 @@ namespace ModelingOperationOfSpeedControlPoint.CheckPoints
         public CheckPoint()
         {
             Random random = new Random();
-            int countStolenNumbers = 10;
+            int countStolenNumbers = 100;
             _stolenNumbers = new List<int>();
 
             _static = new CheckPointStatics();

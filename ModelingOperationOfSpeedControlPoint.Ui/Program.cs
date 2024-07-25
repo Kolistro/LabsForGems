@@ -13,8 +13,8 @@ do
     writerConsole.Write(vehicle.ToString());
     checkPoint.RegisterVehicle(vehicle);
 
-
-    System.Threading.Thread.Sleep(1000);
+    int timeBetweenVehicle = new Random().Next(500, 5001);
+    System.Threading.Thread.Sleep(timeBetweenVehicle);
 } while (!Console.KeyAvailable);
 
 writerConsole.Write(checkPoint.GetStatics().ToString());

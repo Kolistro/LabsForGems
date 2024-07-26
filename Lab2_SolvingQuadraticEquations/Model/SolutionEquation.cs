@@ -9,9 +9,10 @@
         * 2 - два действительных корня
         * -1 - бесконечное число действительных корней
         */
+        // лучше через enum
         public int NumberSolutions { get; set; }
         public double X1 { get; set; }
-        public double X2 { get; set; }
+        public double X2 { get;set; }
 
 
         public SolutionEquation()

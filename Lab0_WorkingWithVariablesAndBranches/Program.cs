@@ -63,24 +63,21 @@ namespace Lab0_WorkingWithVariablesAndBranches
 
         static double ConvertTemperature(int temperature, ref string scale)
         {
-            var convertedTemp = 0.0;
+            double temp = 0.0;
             if (scale.ToUpper() == "C")
             {
                 scale = "F";
-                double temp = (temperature * 9) / 5 + 32;
-                convertedTemp = Math.Round(temp);
+                temp = (temperature * 9) / 5 + 32;
             }else if (scale.ToUpper() == "F")
             {
                 scale = "C";
-                double temp = (temperature - 32) * 5 / 9;
-                convertedTemp = Math.Round(temp);
+                temp = (temperature - 32) * 5 / 9;
             }
-            return convertedTemp;
+            return temp;
         }
 
-        static void WriteTemperature(double temperature, string scale)
-        {
-            Console.WriteLine("Результат:" + temperature.ToString() + scale.ToString());
-        }
+        static void WriteTemperature(double temperature, string scale) =>
+            Console.WriteLine("Результат:" + Math.Round(temperature).ToString() + scale.ToString());
+        
     }
 }

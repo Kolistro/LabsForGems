@@ -7,7 +7,7 @@ namespace SolvingQuadraticEquations.Implementation
     {
         public void Write(SolutionEquation solutionEquation)
         {
-            string filePath = "C:\\Users\\Kolistro\\source\\repos\\LabsForGems\\Lab2_SolvingQuadraticEquations\\output.txt";
+            string filePath = "OutputData\\output.txt";
             if (!File.Exists(filePath))
             {
                 throw new IOException("Файл для записи не существует!");

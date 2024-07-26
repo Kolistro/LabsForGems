@@ -7,7 +7,7 @@ namespace SolvingQuadraticEquations.Implementation
     {
         public СoefficientsEquation Read() 
         {
-            string filePath = "C:\\Users\\Kolistro\\source\\repos\\LabsForGems\\Lab2_SolvingQuadraticEquations\\input.txt";
+            string filePath = "InputData\\input.txt";
             if (!File.Exists(filePath))
             {
                 throw new IOException("Файл для чтения не существует!");

@@ -1,14 +1,8 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace MyExtensions
+﻿namespace MyExtensions
 {
     public static class CollectionExtensions
     {
-        public static TSource First<TSource>(this IEnumerable<TSource> source, Predicate<TSource> predicate = null)
+        public static TSource First<TSource>(this IEnumerable<TSource> source, Predicate<TSource>? predicate = null)
         {
             if (source == null || source.Count() == 0)
                 throw new ArgumentNullException("Коллекция пуста!", nameof(source));
@@ -25,7 +19,7 @@ namespace MyExtensions
             throw new InvalidOperationException("Элемент удовлетворяющий условию не найден!");
         }
 
-        public static TSource FirstOrDefault<TSource>(this IEnumerable<TSource> source, Predicate<TSource> predicate = null)
+        public static TSource? FirstOrDefault<TSource>(this IEnumerable<TSource>? source, Predicate<TSource>? predicate = null)
         {
             if (source == null || source.Count() == 0)
                 return default(TSource);

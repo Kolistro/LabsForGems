@@ -39,7 +39,7 @@ namespace MyExtensions.Tests
         public void PassedNullCollection()
         {
             // Arrange.
-            List<Object> list = null;
+            List<Object>? list = null;
 
             // Act + assert.
             Assert.Null(list.FirstOrDefault());

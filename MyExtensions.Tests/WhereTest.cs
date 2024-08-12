@@ -1,4 +1,6 @@
-﻿namespace MyExtensions.Tests
+﻿using MyExtensions;
+
+namespace MyExtensions.Tests
 {
     public class WhereTest
     {

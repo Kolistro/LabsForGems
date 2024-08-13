@@ -2,13 +2,13 @@
 {
     public class GrinderUnit
     {
-        private int MIN_QUANTITY = 1;
-        private int MAX_QUANTITY = 100;
+        private int MinQuantity = 1;
+        private int MaxQuantity = 100;
 
        public GroundCoffee Grind(int quantity)
        {
-            if (quantity < MIN_QUANTITY || quantity > MAX_QUANTITY) 
-                throw new ArgumentException(nameof(quantity));
+            if (quantity < MinQuantity || quantity > MaxQuantity) 
+                throw new ArgumentException($"Количество кофе должно быть в пределах {MinQuantity}-{MaxQuantity}.", nameof(quantity));
 
             return new GroundCoffee(quantity);
        }

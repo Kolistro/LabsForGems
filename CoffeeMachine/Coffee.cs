@@ -5,9 +5,6 @@ namespace CoffeeMachine.Tests
     {
         public RecipeName Recipe { get; set; }
 
-        public Coffee()
-        {
-            Recipe = RecipeName.ESPRESSO;
-        }
+        public Coffee() => Recipe = RecipeName.Espresso;
     }
 }

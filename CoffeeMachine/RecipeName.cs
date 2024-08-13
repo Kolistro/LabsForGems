@@ -2,9 +2,9 @@
 {
     public enum RecipeName
     {
-        ESPRESSO,
-        LATTE,
-        CAPPUCCINO,
-        AMERICANO
+        Espresso,
+        Latte,
+        Cappuccino,
+        Americano
     }
 }

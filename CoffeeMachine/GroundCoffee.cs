@@ -4,9 +4,6 @@
     {
         public int Quantity { get; }
 
-        public GroundCoffee(int quantity)
-        {
-            Quantity = quantity;
-        }
+        public GroundCoffee(int quantity) => Quantity = quantity;
     }
 }

@@ -62,7 +62,7 @@
             _coffeeMachine.LoadMilk(resource);
             _coffeeMachine.LoadBeans(resource);
 
-            const RecipeName recipeName = RecipeName.LATTE;
+            const RecipeName recipeName = RecipeName.Latte;
 
             // Act.
             Coffee coffee = _coffeeMachine.Brew(recipeName);
@@ -83,7 +83,7 @@
             const int value = 970;
 
             // Act.
-            Coffee coffee = _coffeeMachine.Brew(RecipeName.LATTE);
+            Coffee coffee = _coffeeMachine.Brew(RecipeName.Latte);
 
             // Assert.
             Assert.Equal(value, _coffeeMachine.GetWaterLevel());
@@ -101,7 +101,7 @@
             const int value = 940;
 
             // Act.
-            Coffee coffee = _coffeeMachine.Brew(RecipeName.LATTE);
+            Coffee coffee = _coffeeMachine.Brew(RecipeName.Latte);
 
             // Assert.
             Assert.Equal(value, _coffeeMachine.GetMilkLevel());
@@ -119,7 +119,7 @@
             const int value = 990;
 
             // Act.
-            Coffee coffee = _coffeeMachine.Brew(RecipeName.LATTE);
+            Coffee coffee = _coffeeMachine.Brew(RecipeName.Latte);
 
             // Assert.
             Assert.Equal(value, _coffeeMachine.GetBeansLevel());
@@ -140,7 +140,7 @@
             _coffeeMachine.LoadBeans(resourceBeans);
 
             // Act + Assert.
-            Assert.Throws<ArgumentException>(() => _coffeeMachine.Brew(RecipeName.LATTE));
+            Assert.Throws<ArgumentException>(() => _coffeeMachine.Brew(RecipeName.Latte));
         }
 
     }

@@ -2,24 +2,26 @@
 {
     public class Container
     {
-        private const int MIN_CAPACITY = 1;
-        private const int MAX_CAPACITY = 3000;
+        private const int MinCapacity = 1;
+        private const int MaxCapacity = 3000;
 
         private int _capacity;
         private int _value;
 
         public Container(int capacity)
         {
-            if(capacity < MIN_CAPACITY || capacity > MAX_CAPACITY)
-                throw new ArgumentException(nameof(capacity));
+            if(capacity < MinCapacity || capacity > MaxCapacity)
+                throw new ArgumentException($"Емкасть контейнера должна быть в пределах {MinCapacity}-{MaxCapacity}.", nameof(capacity));
             _capacity = capacity;
         }
 
         public void LoadResource(int resource)
         {
             int temp = _value + resource;
-            if(resource < MIN_CAPACITY || temp > _capacity)
-                throw new ArgumentException(nameof(resource));
+            if(resource < MinCapacity )
+                throw new ArgumentException("Некорректное значение ресурса.",nameof(resource));
+            if ( temp > _capacity)
+                throw new ArgumentException("При добавлении ресурса, контейнер будет переполнен.", nameof(resource));
 
             _value += resource;
         }
@@ -34,16 +36,10 @@
             return resource;
         }
 
-        public int GetCapacity()
-        {
-            return _capacity;
-        }
+        public int Capacity => _capacity;
 
-        public int GetValue()
-        {
-            return _value;
-        }
+        public int Value => _value;
 
-       
+
     }
 }

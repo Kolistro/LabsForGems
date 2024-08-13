@@ -13,13 +13,13 @@
         public Recipe(int water, int milk, int beans)
         {
             if (water < MIN_RESOURCE || water > MAX_WATER) 
-                throw new ArgumentException(nameof(water));
+                throw new ArgumentException($"Количество воды должно быть в пределах {MIN_RESOURCE}-{MAX_WATER}.", nameof(water));
 
             if (milk < MIN_RESOURCE || milk > MAX_MILK) 
-                throw new ArgumentException(nameof(milk));
+                throw new ArgumentException($"Количество молока должно быть в пределах {MIN_RESOURCE}-{MAX_MILK}.", nameof(milk));
 
             if (beans < MIN_RESOURCE || beans > MAX_BEANS) 
-                throw new ArgumentException(nameof(beans));
+                throw new ArgumentException($"Количество зёрен должно быть в пределах {MIN_RESOURCE}-{MAX_BEANS}.", nameof(beans));
 
             Water = water;
             Milk = milk;

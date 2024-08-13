@@ -13,7 +13,7 @@ namespace CoffeeMachine.Tests
             var container = new Container(capacity);
 
             // Assert.
-            Assert.Equal(capacity, container.GetCapacity());
+            Assert.Equal(capacity, container.Capacity);
         }
 
         [Theory]
@@ -37,7 +37,7 @@ namespace CoffeeMachine.Tests
             container.LoadResource(resource);
 
             // Assert.
-            Assert.Equal(resource, container.GetValue());
+            Assert.Equal(resource, container.Value);
         }
 
         [Theory]
@@ -65,7 +65,7 @@ namespace CoffeeMachine.Tests
 
             // Assert.
             Assert.Equal(resource, withdrawnResource);
-            Assert.Equal(0, container.GetValue());
+            Assert.Equal(0, container.Value);
 
         }
 

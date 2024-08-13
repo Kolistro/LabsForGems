@@ -14,10 +14,10 @@ namespace CoffeeMachine
         public CoffeeMachine(Container waterContainer, Container milkContainer, Container beansContainer)
         {
             _dictionaryRecipe = new Dictionary<RecipeName, Recipe>();
-            _dictionaryRecipe.Add(RecipeName.ESPRESSO, new Recipe(30, 0, 10));
-            _dictionaryRecipe.Add(RecipeName.CAPPUCCINO, new Recipe(30, 40, 10));
-            _dictionaryRecipe.Add(RecipeName.LATTE, new Recipe(30, 60, 10));
-            _dictionaryRecipe.Add(RecipeName.AMERICANO, new Recipe(70, 0, 20));
+            _dictionaryRecipe.Add(RecipeName.Espresso, new Recipe(30, 0, 10));
+            _dictionaryRecipe.Add(RecipeName.Cappuccino, new Recipe(30, 40, 10));
+            _dictionaryRecipe.Add(RecipeName.Latte, new Recipe(30, 60, 10));
+            _dictionaryRecipe.Add(RecipeName.Americano, new Recipe(70, 0, 20));
 
             _grinderUnit = new GrinderUnit();
             _brewingUnit = new BrewingUnit();
@@ -42,35 +42,17 @@ namespace CoffeeMachine
             return coffee;
         }
 
-        public int GetWaterLevel()
-        {
-            return _waterContainer.GetValue();
-        }
+        public int GetWaterLevel() => _waterContainer.Value;
 
-        public int GetMilkLevel()
-        {
-            return _milkContainer.GetValue();
-        }
+        public int GetMilkLevel() => _milkContainer.Value;
 
-        public int GetBeansLevel()
-        {
-            return _beansContainer.GetValue();
-        }
+        public int GetBeansLevel() => _beansContainer.Value;
 
-        public void LoadWater(int resource)
-        {
-            _waterContainer.LoadResource(resource);
-        }
+        public void LoadWater(int resource) => _waterContainer.LoadResource(resource);
 
-        public void LoadMilk(int resource)
-        {
-            _milkContainer.LoadResource(resource);
-        }
-        public void LoadBeans(int resource)
-        {
-            _beansContainer.LoadResource(resource);
-        }
+        public void LoadMilk(int resource) => _milkContainer.LoadResource(resource);
+        public void LoadBeans(int resource) => _beansContainer.LoadResource(resource);
 
-        
+
     }
 }

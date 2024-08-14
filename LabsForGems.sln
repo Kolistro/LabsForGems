@@ -37,9 +37,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MyExtensions.Tests", "MyExt
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Lab5", "Lab5", "{32DF09E7-8A34-41E7-B0DC-E756DE27775C}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CoffeeMachine.Tests", "CoffeeMachine.Tests\CoffeeMachine.Tests.csproj", "{66A014D6-18E9-4022-96ED-8593281D0EB6}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CoffeeMachine.Tests", "Lab5\CoffeeMachine.Tests\CoffeeMachine.Tests.csproj", "{66A014D6-18E9-4022-96ED-8593281D0EB6}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CoffeeMachine", "CoffeeMachine\CoffeeMachine.csproj", "{06EA0A8C-AD25-4FBF-B441-54869DB55F95}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CoffeeMachine", "Lab5\CoffeeMachine\CoffeeMachine.csproj", "{06EA0A8C-AD25-4FBF-B441-54869DB55F95}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Lab10", "Lab10", "{72C63D58-6B93-46CB-90F6-3DC6A3B33109}"
 EndProject

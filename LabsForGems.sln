@@ -31,9 +31,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BusinessLogic.Tests", "Test
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Lab9", "Lab9", "{260BD5F9-0822-4F70-82E7-BAB05F574290}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MyExtensions", "MyExtensions\MyExtensions.csproj", "{9F1B13C2-3011-40CE-BCEB-94E3B7266561}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MyExtensions", "Lab9\MyExtensions\MyExtensions.csproj", "{9F1B13C2-3011-40CE-BCEB-94E3B7266561}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MyExtensions.Tests", "MyExtensions.Tests\MyExtensions.Tests.csproj", "{A8197062-E657-4264-BB0A-7FB0273440B7}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MyExtensions.Tests", "Lab9\MyExtensions.Tests\MyExtensions.Tests.csproj", "{A8197062-E657-4264-BB0A-7FB0273440B7}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Lab5", "Lab5", "{32DF09E7-8A34-41E7-B0DC-E756DE27775C}"
 EndProject

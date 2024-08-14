@@ -21,13 +21,13 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ModelingOperationOfSpeedCon
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "TDD", "TDD", "{7A1A155F-C980-48A9-A207-1DDC217AC38D}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Domain", "Domain\Domain.csproj", "{1285406B-2C64-47CA-B659-5360514C7BE2}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Domain", "TDD\Domain\Domain.csproj", "{1285406B-2C64-47CA-B659-5360514C7BE2}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ConsoleApplication", "ConsoleApplication\ConsoleApplication.csproj", "{B9530AB4-9255-470C-A69B-A8D1F9248567}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ConsoleApplication", "TDD\ConsoleApplication\ConsoleApplication.csproj", "{B9530AB4-9255-470C-A69B-A8D1F9248567}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BusinessLogic", "BusinessLogic\BusinessLogic.csproj", "{EBA3DEBC-6DE1-467F-B62F-A1E16F529FAA}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BusinessLogic", "TDD\BusinessLogic\BusinessLogic.csproj", "{EBA3DEBC-6DE1-467F-B62F-A1E16F529FAA}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BusinessLogic.Tests", "Tests\BusinessLogic.Tests.csproj", "{63A186D4-78ED-4D4A-9A19-122C0EEDD42A}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BusinessLogic.Tests", "TDD\Tests\BusinessLogic.Tests.csproj", "{63A186D4-78ED-4D4A-9A19-122C0EEDD42A}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Lab9", "Lab9", "{260BD5F9-0822-4F70-82E7-BAB05F574290}"
 EndProject

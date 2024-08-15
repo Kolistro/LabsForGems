@@ -6,7 +6,14 @@ internal class Program
     private static void Main(string[] args)
     {
         var targetType = typeof(ArithmeticTest);
-
-        MyTestRunner.RunForType(targetType, Console.WriteLine);
+        try
+        {
+            MyTestRunner.RunForType(targetType, Console.WriteLine);
+        }
+        catch (Exception ex)
+        {
+            Console.WriteLine(ex.ToString());   
+        }
+        
     }
 }

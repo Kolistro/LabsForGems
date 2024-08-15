@@ -1,7 +1,4 @@
-﻿using ModelingOperationOfSpeedControlPoint.CheckPoints;
-using ModelingOperationOfSpeedControlPoint.Vehicles;
-
-namespace ModelingOperationOfSpeedControlPoint.Writer
+﻿namespace ModelingOperationOfSpeedControlPoint.Writer
 {
     public interface IWriter
     {

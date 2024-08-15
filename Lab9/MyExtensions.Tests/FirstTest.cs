@@ -1,5 +1,3 @@
-using MyExtensions;
-
 namespace MyExtensions.Tests
 {
     public class FirstTest
